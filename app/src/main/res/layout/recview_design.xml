@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="10dp"
+    >
+    
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="horizontal"
+       android:layout_margin="8dp"
+       android:weightSum="2">
+
+       <LinearLayout
+           android:layout_width="0dp"
+           android:layout_height="match_parent"
+           android:layout_weight="1.7"
+           android:layout_marginRight="5dp"
+           android:orientation="vertical">
+
+
+           <TextView
+               android:id="@+id/textViewNameId"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Muhammad Hussain"
+               android:textStyle="bold"
+               android:textSize="20sp"
+               android:layout_marginBottom="5dp"
+               android:textColor="@color/black"/>
+
+           <TextView
+               android:id="@+id/textViewCityId"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Florida,USA"
+               android:textSize="16sp"
+               android:textColor="@color/black"/>
+
+       </LinearLayout>
+
+       <ImageView
+           android:id="@+id/editId"
+           android:layout_width="0dp"
+           android:layout_weight=".15"
+           android:layout_height="match_parent"
+           android:layout_marginRight="10dp"
+           android:src="@drawable/ic_baseline_edit_24"/>
+
+       <ImageView
+           android:id="@+id/deleteId"
+           android:layout_width="0dp"
+           android:layout_weight=".15"
+           android:layout_height="match_parent"
+           android:src="@drawable/ic_baseline_delete_24"/>
+   </LinearLayout>
+
+</androidx.cardview.widget.CardView>
